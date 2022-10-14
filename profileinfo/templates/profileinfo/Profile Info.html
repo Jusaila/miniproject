@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>profile info</title>
+</head>
+<body>
+	<h2 align="center">Profile info</h2>
+	<form method="post">
+        {% csrf_token %}
+		<table align="center">
+			<tr>
+				<td>Full Name</td></tr>
+				<tr><td><input type="text" name="fullname"></td>
+			</tr>
+			<tr>
+				<td>Phone</td></tr>
+				<tr><td><input type="text" name="phone"></td>
+			</tr>
+			<tr>
+				<td>Parent Name</td></tr>
+				<tr><td><input type="text" name="parentname"></td>
+			</tr>
+			<tr>
+				<td>Parent Phone</td></tr>
+				<tr><td><input type="text" name="parentphone"></td>
+			</tr>
+			<tr>
+				<td>Email</td></tr>
+				<tr><td><input type="text" name="email"></td>
+			</tr>
+			<tr>
+				<td>Parent Email</td></tr>
+				<tr><td><input type="text" name="parentemail"></td>
+			</tr>
+			<tr>
+				<td>Stream</td></tr>
+				<tr><td><select name="Stream">
+					<option value="select">select</option>
+					<option value="science">science</option>
+					<option value="commerce">commerce</option>
+					<option value="humanities">humanities</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td></td>
+			</tr>
+			<tr>
+				<center>
+					
+				</center>
+				<td align="center"><input type="submit" name="btn" value="save"></td>
+			</tr>
+		
+
+
+			
+			
+		</table>
+		
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>College-post</title>
+</head>
+<body>
+	<h2 align="center">College-post</h2>
+	<form method="post">
+        {% csrf_token %}
+		<table align="center">
+			<tr>
+				<td>College Name</td>
+				<td><input type="text" name="collegename"></td>
+			</tr>
+			<tr>
+				<td>College Location</td>
+				<td><input type="text" name="collegelocation"></td>
+			</tr>
+			<tr>
+				<td>Phone</td>
+				<td><input type="text" name="phone"></td>
+			</tr>
+			<tr>
+				<td>E-mail</td>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td>Departments</td>
+				<td><input type="text" name="departments"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<center>
+					
+				</center>
+				<td align="center"><input type="submit" name="btn" value="save"></td>
+			</tr>
+		
+		</table>
+		
+	</form>
+
+</body>
+</html>

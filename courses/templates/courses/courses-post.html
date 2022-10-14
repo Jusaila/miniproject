@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>courses-post</title>
+</head>
+<body>
+	<h2 align="center">Courses-post</h2>
+	<form method="post">
+        {% csrf_token %}
+		<table align="center">
+			<tr>
+				<td>Courses</td></tr>
+				<tr><td><input type="text" name="courses"></td>
+			</tr>
+			<tr>
+				<td>College Name</td></tr>
+				<tr><td><input type="text" name="collegename"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<center>
+					
+				</center>
+				<td align="center"><input type="submit" name="btn" value="save"></td>
+			</tr>
+    </form>
+	</table>
+</body>
+</html>
