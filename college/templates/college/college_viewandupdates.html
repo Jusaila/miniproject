@@ -1,37 +1,38 @@
+{% extends 'temp/admin.html' %}
+{% block base %}
 <!DOCTYPE html>
 <html>
 <head>
-	<title>college_view and Updates</title>
+	<title>update college</title>
 </head>
 <body>
-	<h2 align="center">College_view and Updates</h2>
-
 	<center>
-		<table border="1">
-			<tr>
-				<th>College Name</th>
-				<th>College Location</th>
-				<th>Phone</th>
-				<th>E-mail</th>
-				<th>Departments</th>
-				<th></th>
-				<th></th>
-			</tr>
-            {% for i in x %}
-			<tr>
-				<td>{{ i.college_name }}</td>
-				<td>{{ i.college_location }}</td>
-				<td>{{ i.phone }}</td>
-				<td>{{ i.e_mail }}</td>
-				<td>{{ i.departments }}</td>
-				<td><a href="">update</a></td>
-				<td><a href="">delete</a></td>
+		<h1>VIEW AND UPDATE COLLEGE</h1>
 
-			</tr>
-            {% endfor %}
-		</table>
+	<table border="2">
+		<tr>
+			<th>College Name</th>
+			<th>College Location</th>
+			<th>Phone</th>
+			<th>E-mail</th>
+			<th>College Website</th>
 
+		</tr>
+        {% for i in x %}
+		<tr>
+			<td>{{ i.college_name }}</td>
+			<td>{{ i.college_location }}</td>
+			<td>{{ i.phone }}</td>
+			<td>{{ i.e_mail }}</td>
+			<td>{{ i.website }}</td>
+			<td><a href="{% url 'update' idd=i.c_id %}">UPDATE</a></td>
+		</tr>
+{% endfor %}
+	</table>
+
+</form>
 	</center>
 
 </body>
 </html>
+{% endblock %}
